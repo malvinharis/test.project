@@ -1,7 +1,21 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <div class="navigation">
+      
+    </div>
+    <div class="main">
+      <div class="main__wrapper">
+        <div class="main__body">
+          <transition
+            enter-active-class="fadeIn"
+            leave-active-class="fadeOut"
+            mode="out-in"
+          >
+            <router-view style="animation-duration: .5s" />
+          </transition>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
