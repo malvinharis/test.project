@@ -2,7 +2,7 @@
   <div class="app">
     <div class="main">
       <div class="main__wrapper">
-        <div class="main__body">
+        <div class="main__body"> 
           <!-- Basic Radio Button Component -->
           <section class="main__section">
             <BaseRadioButton :title="radioButton.title" :data="radioButton.data" />
@@ -24,7 +24,8 @@
                   </div>
                   <div class="parking__item">
                     <div class="parking__group">
-                      <BaseTextField label="Login Time" />
+                      <BaseTextField label="Login Time" v-model="loginTime"/> 
+                      {{ loginTime }}
                       <BaseTextField label="Logout Time" />
                     </div>
                   </div>
@@ -49,6 +50,7 @@ export default {
     BaseTextField
   },
   data: () => ({
+    loginTime: 'asd',
     radioButton: {
       title: 'Name',
       data: [
