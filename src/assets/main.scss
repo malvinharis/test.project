@@ -1,0 +1,39 @@
+.main{
+  &__section{
+    padding: .5rem;
+  }
+}
+
+.base{
+  &__text, &__date{
+    display: grid;
+    gap: .5rem;
+  }
+  &__button-radio{
+    &__title{
+      font-weight: 600;
+      padding-bottom: .25rem;
+    }
+    &__list{
+      padding: .25rem 0;
+      display: flex;
+    }
+    &__input{
+      margin-right: .5rem;
+    }
+  }
+}
+
+.parking{
+  padding: 1rem 0;
+  &__title{
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  &__group{
+    display: flex;
+  }
+  &__item{
+    padding-bottom: .5rem;
+  }
+}
